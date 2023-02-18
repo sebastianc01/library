@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Library</title>
+    </head>
+    <body>
+        <h1>Perform an action!</h1>
+
+        <hr>
+        <form action="DisplayAllItems.html">
+            <input type="submit" value="All Items" />
+        </form>
+        <hr>
+        <form action="AvailableItems">
+            <input type="submit" value="Available Items" />
+        </form>
+        <hr>
+        <form action="ItemAction">
+            <p>Name: <input type=text size=20 name=name></p>
+            <p>Author: <input type=text size=20 name=author></p>
+            <p>Date: <input type=text size=20 name=date>(DD.MM.YYYY)</p>
+            <input type="checkbox" name=action id=add value=add>
+            <label for=add>Add a book</label>
+            <input type="checkbox" name=action id=remove value=remove>
+            <label for=remove>Remove a book</label>
+            <input type="checkbox" name=action id=borrow value=borrow>
+            <label for=borrow>Borrow a book</label>
+            <input type="checkbox" name=action id=return value=return>
+            <label for=return>Return a book</label>
+            <br>
+            <input type="submit" value="OK" />
+        </form>
+        <hr>
+        <form action="ActionHistory">
+            <input type="submit" value="Recent actions" />
+        </form>
+    </body>
+</html>
